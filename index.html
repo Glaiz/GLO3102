@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Projet de session</title>
+	<title>Projet de session</title>
 
-<link rel="stylesheet" type="text/css" href="css/contenu.css">
-<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
-<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-<link type="text/css" rel="stylesheet" href="css/bootstrap-responsive.min.css"
+	<link rel="stylesheet" type="text/css" href="css/contenu.css">
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap-responsive.min.css"
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<!-- Include jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+	<!-- Include Theatre files - I recommend extracting all the Theatre files into "theatre" folder for easier upgrades in the future -->
+    <link type="text/css" rel="stylesheet" href="css/Lib/theatre.css"/>
+    <script type="text/javascript" src="js/Lib/jquery.theatre.min.js"></script>
+
+	<!-- Some styling for this page -->
+    <link rel="stylesheet" href="css/Lib/Carou.css"/>
+
+	<!-- This is how you initialize theatre -->
+	<script type="text/javascript">
+	  $(window).load(function() { // Run when everything is loaded (especially images)
+	  $('#myExample').theatre({ //Initialize theatre
+	  'effect': '3d', // css3:stack effect and fall over to 3d effect for older browsers
+	  'selector': 'img, embed, video', // for galleries we want to animage only images without the surrounding links
+	  'paging': '.paging' // generate paging using element with class 'paging' as the template
+	  });
+	  });
+	</script>
+
+	<!-- Design for nicer paging -->
+	<style type="text/css">
+	  .paging {
+	  text-align: center;
+	  }
+	  .paging span {
+	  text-decoration: none;
+	  color: silver;
+	  cursor: pointer;
+	  }
+	  .paging span.active {
+	  font-size: 2em;
+	  color: black;
+	  }
+
+	  .paging2 span {
+	  font-size: 2em;
+	  }
+	</style>
+	
 </head>
 
 <body>
@@ -36,8 +80,48 @@
 </div> <!-- Fin du div section contenu -->
 
 
+<!-- Caroussel magique -->
+ <br/>
 	
+	<!-- gallery -->
+    <div id="myExample" style="width: 632px; height:500px;margin: auto; visibility: hidden /* trick to hide loading images before Theatre kicks in */;">
+
+      <a href="2.jpg" target="_blank">
+		<img src="images/2.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+      <a href="3.jpg" target="_blank">
+			<img src="images/3.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+      <a href="5.jpg" target="_blank">
+        <img src="images/5.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+      <a href="6.jpg" target="_blank">
+        <img src="images/6.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+      <a href="7.jpg" target="_blank">
+        <img src="images/7.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+      <a href="8.jpg" target="_blank">
+        <img src="images/8.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+      <a href="9.jpg" target="_blank">
+        <img src="images/9.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+      <a href="10.jpg" target="_blank">
+        <img src="images/10.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+    </div>
+
+	<!-- optional paging -->
+	<div class="paging"><span>{#}</span></div>
 	
+	<!-- custom controls -->
+	<div class="controls">
+	  <span onclick="$('#myExample').theatre('prev');">Prev</span>
+	  <span onclick="$('#myExample').theatre('play');">Play</span>
+	  <span onclick="$('#myExample').theatre('stop');">Stop</span>
+	  <span onclick="$('#myExample').theatre('next');">Next</span>
+	</div>
 	
 </body>
 
