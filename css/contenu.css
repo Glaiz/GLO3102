@@ -71,3 +71,24 @@ box-shadow:         2px 1px 19px rgba(50, 50, 50, 0.5);
 .justify{
 text-align:justify;
 }
+
+/* Css relié au carousel */ 
+
+	  .paging {
+	  text-align: center;
+	  }
+	  .paging span {
+	  text-decoration: none;
+	  color: silver;
+	  cursor: pointer;
+	  }
+	  .paging span.active {
+	  font-size: 2em;
+	  color: black;
+	  }
+
+	  .paging2 span {
+	  font-size: 2em;
+	  
+	  
+	  
