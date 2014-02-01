@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projet de session</title>
+
+	<link rel="stylesheet" type="text/css" href="css/contenu.css">
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+	<link type="text/css" rel="stylesheet" href="css/Lib/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="css/Lib/bootstrap-responsive.min.css"
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<!-- Include jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+	<!-- Include Theatre files - I recommend extracting all the Theatre files into "theatre" folder for easier upgrades in the future -->
+    <link type="text/css" rel="stylesheet" href="css/Lib/theatre.css"/>
+    <script type="text/javascript" src="js/Lib/jquery.theatre.min.js"></script>
+
+	<!-- Some styling for this page -->
+    <link rel="stylesheet" href="css/Lib/Carou.css"/>
+
+	<!-- This is how you initialize theatre -->
+	<script type="text/javascript">
+	  $(window).load(function() { // Run when everything is loaded (especially images)
+	  $('#myExample').theatre({ //Initialize theatre
+	  'effect': '3d', // css3:stack effect and fall over to 3d effect for older browsers
+	  'selector': 'img, embed, video', // for galleries we want to animage only images without the surrounding links
+	  'paging': '.paging' // generate paging using element with class 'paging' as the template
+	  });
+	  });
+	</script>
+
+	<script>
+
+  	</script>
+	</head>
+
+<body>
+		<div id="top-menu" class="navbar-fixed-top">
+			<nav class="menu-principal">
+				<ul>
+					<li><img src="images/Logo.png" style="width:50px; height:60px;"></li>
+					<li><a href="#" class="button">Accueil</a></li>
+					<li><a href="#" class="button">Déposer une annonce</a></li>
+					<li><a href="#" class="button">Offres</a></li>
+					<li><a href="#" class="button">Demandes</a></li>
+					<li><a href="#" class="button">Mes annonces</a></li>
+					<li><a href="#" class="button">Connexion</a></li>
+					<li><a href="#" class="button">Aide</a></li>
+				</ul>
+			</nav>
+				
+		</div>	
+		
+<div class="contenu">
+
+<div class="span2">
+	Mode
+	---
+	Auto-Moto
+	---
+	Maison-Jardin-Décor
+	---
+	Objets de collection
+	---
+	Bijoux-Montres
+	---
+	Electronique
+	---
+	Objet de sport
+	---
+	Aubaines
+</div>
+
+
+<div class="span8">
+	<div class="fiche-objet">
+	
+		<div class="titre">
+			MAcBook pro 13 pouces avec écran rétina
+		</div>
+
+		<div class="photo">
+			<a href="macbook.jpg">
+				<img src="images/macbook.jpg"/>
+      		</a>
+		</div>
+
+		<div class="info-objet">
+			<p>FICHE OBJET A REMPLIR PAR LE VENDEUR
+			<br><br>
+			Prix: 1200$<br>
+			État de l'objet: Bon état<br>
+			Marque: Apple<br>
+			</p>
+
+		</div>
+
+
+
+		<div class="tabbable"> 
+		    <ul class="nav nav-tabs">
+		        <li class="active"><a href="#accueil" data-toggle="tab">Description</a></li>
+		        <li><a href="#livres" data-toggle="tab">Paiement</a></li>
+		        <li><a href="#témoignages" data-toggle="tab">Expédition</a></li>
+		    </ul>
+		    <div class="tab-content">
+		        <div class="tab-pane active" id="accueil">Je vends car double emploi</div>
+		        <div class="tab-pane" id="livres">Accepte tous paiements</div>
+		        <div class="tab-pane" id="témoignages">Possibilité de venir le chercher à Québec</div>
+		    </div>
+		</div>
+	</div>  <!-- Fin du div section fiche-objet -->
+ </div>
+<div class="span2">
+	<div id="info-enchère">
+		<p>TEMPS RESTANT: 13min28s<br><br>
+		</p>
+	</div>
+
+	<div id="info-vendeur">
+		info vendeur
+	</div>
+</div>
+		
+
+</div> <!-- Fin du div section contenu -->
+
+
+
+	
+</body>
+
+</html>
