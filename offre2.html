@@ -20,6 +20,21 @@
 	<!-- Some styling for this page -->
     <link rel="stylesheet" href="css/Lib/Carou.css"/>
 
+    <!-- Breadcrumbs css -->
+    <link rel="stylesheet" href="css/Lib/breadcrumbs.css"/>
+
+    <!-- tab pluggin -->
+    <link href="css/lib/tabulous.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/tabulous.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function($) {
+   			$('#tabs').tabulous({
+     			 effect: 'scale'
+  			 });
+		});
+	</script>
+
 	<!-- This is how you initialize theatre -->
 	<script type="text/javascript">
 	  $(window).load(function() { // Run when everything is loaded (especially images)
@@ -31,9 +46,7 @@
 	  });
 	</script>
 
-	<script>
 
-  	</script>
 	</head>
 
 <body>
@@ -56,28 +69,37 @@
 <div class="contenu">
 
 <div class="span2">
-	Mode
-	---
-	Auto-Moto
-	---
-	Maison-Jardin-Décor
-	---
-	Objets de collection
-	---
-	Bijoux-Montres
-	---
-	Electronique
-	---
-	Objet de sport
-	---
-	Aubaines
+		Mode<br>
+	---<br>
+	Auto-Moto<br>
+	---<br>
+	Maison-Jardin-Décor<br>
+	---<br>
+	Objets de collection<br>
+	---<br>
+	Bijoux-Montres<br>
+	---<br>
+	Electronique<br>
+	---<br>
+	Objet de sport<br>
+	---<br>
+	Aubaines<br>
 </div>
 
 
 <div class="span8">
-	<div class="fiche-objet">
+	<div id="fil-ariane">  
+	    <ul class="breadcrumb">  
+	        <li><a href="#index.html">Acceuil</a></li>  
+	        <li><a href="#">Offres</a></li>  
+	        <li><a href="#">Électroniques</a></li>  
+	        <li><a href="#">Apple</a></li>  
+	    </ul>  
+	</div>
+
+	<div class="fiche-objet"> 
 	
-		<div class="titre">
+		<div id="titre">
 			MAcBook pro 13 pouces avec écran rétina
 		</div>
 
@@ -87,40 +109,61 @@
       		</a>
 		</div>
 
-		<div class="info-objet">
+		<div id="info-objet" class="info">
 			<p>FICHE OBJET A REMPLIR PAR LE VENDEUR
 			<br><br>
 			Prix: 1200$<br>
+			Quantité: 1<br>
 			État de l'objet: Bon état<br>
 			Marque: Apple<br>
 			</p>
 
 		</div>
 
-
-
-		<div class="tabbable"> 
-		    <ul class="nav nav-tabs">
-		        <li class="active"><a href="#accueil" data-toggle="tab">Description</a></li>
-		        <li><a href="#livres" data-toggle="tab">Paiement</a></li>
-		        <li><a href="#témoignages" data-toggle="tab">Expédition</a></li>
-		    </ul>
-		    <div class="tab-content">
-		        <div class="tab-pane active" id="accueil">Je vends car double emploi</div>
-		        <div class="tab-pane" id="livres">Accepte tous paiements</div>
-		        <div class="tab-pane" id="témoignages">Possibilité de venir le chercher à Québec</div>
-		    </div>
+		<div class="tabs-info">
+			<div id="tabs">
+			   <ul>
+			      <li><a href="#tab-1" title="com">Description</a></li>
+			      <li><a href="#tab-2" title="paiement">Paiement</a></li>
+			      <li><a href="#tab-3" title="expedition">Expédition</a></li>
+			   </ul>
+			   <div id="tabs_container">
+			      <div id="tab-1">
+			         Je vends car double emploi
+			      </div>
+			      <div id="tab-2">
+			         Accepte tous paiements
+			      </div>
+			      <div id="tab-3">
+			         Possibilité de se rencontrer à Québec
+			      </div>
+			   </div>
+			</div>
 		</div>
+
 	</div>  <!-- Fin du div section fiche-objet -->
  </div>
 <div class="span2">
-	<div id="info-enchère">
+	<div id="info-enchere" class="info">
 		<p>TEMPS RESTANT: 13min28s<br><br>
+			Enchère actuelle: 200$<br><br>
+			Saisir montant: 
+			<input type="number" id="montant-enchere"/> 
+			<select id="devisechoice" >
+   				<option value="dollarcan"> CAD </option>
+   				<option value="dollarus"> USD </option>
+   				<option value="euro"> EUR </option>
+			</select>
+			<button type="button" id="enchere-button">Enchérir</button>
 		</p>
 	</div>
 
-	<div id="info-vendeur">
-		info vendeur
+	<div id="info-vendeur" class="info">
+		<ul>
+			<li>Informations sur le vendeur</li>
+			<li>Enregistrer le vendeur</li>
+			<li>Voir les autres enchères du vendeur</li>
+		</ul>
 	</div>
 </div>
 		
