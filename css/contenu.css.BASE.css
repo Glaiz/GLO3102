@@ -1,0 +1,206 @@
+html,body{
+margin: 0;
+padding:0 ;
+}
+
+.top-menu{
+width:100%;
+height:10%;
+margin:0;
+background-color:gray;
+}
+
+/*
+ * Menu principal
+ */
+ 
+ #top-menu
+ {
+	padding: 15px;
+ 	width : 100%;
+	height : 10%;
+	margin:auto;
+  background:#2c3e50;
+ }
+ 
+.menu-principal ul{
+	list-style-type: none;
+}
+
+.menu-principal ul li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.menu-principal ul li a {
+	color: #656565;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.menu-principal ul li a:hover {
+	border-bottom: 1px solid red;
+}
+
+.contenu{
+
+margin-top:80px;
+}
+
+.button{
+color: rgb(0, 0, 0);
+font-size: 18px;
+padding: 11px;
+text-shadow: 0px 1px 6px rgba(30, 30, 30, 0.8);
+-webkit-border-radius: 8.91891891891892px;
+-moz-border-radius: 8.91891891891892px;
+border-radius: 8.91891891891892px;
+background: rgb(255, 255, 255);
+background: -moz-linear-gradient(23deg, rgb(255, 255, 255) 35%, rgb(255, 255, 255) 50%);
+background: -webkit-linear-gradient(23deg, rgb(255, 255, 255) 35%, rgb(255, 255, 255) 50%);
+background: -o-linear-gradient(23deg, rgb(255, 255, 255) 35%, rgb(255, 255, 255) 50%);
+background: -ms-linear-gradient(23deg, rgb(255, 255, 255) 35%, rgb(255, 255, 255) 50%);
+background: linear-gradient(293deg, rgb(255, 255, 255) 35%, rgb(255, 255, 255) 50%);
+-webkit-box-shadow: 2px 1px 19px rgba(50, 50, 50, 0.5);
+-moz-box-shadow:    2px 1px 19px rgba(50, 50, 50, 0.5);
+box-shadow:         2px 1px 19px rgba(50, 50, 50, 0.5);
+
+}
+
+.justify{
+text-align:justify;
+}
+
+/* MENU GAUCHE */
+.menu {
+  color: white;
+  box-sizing: border-box;
+}
+
+.menu {
+  background: #34495e;
+  margin-left: -30px;
+  padding: 0;
+  border: 0;
+}
+
+.menu {
+  position: fixed;
+  height: 490px;
+  width: 65px;
+  background: #2c3e50;
+  transition:width 1s;
+  overflow: hidden;
+  font-family: 'Michroma', sans-serif;
+  z-index: 99;
+}
+
+.menu:hover {
+  width: 220px;
+}
+
+.menuItem span {
+  position: absolute;
+  left:80px;
+  top:20px;
+  transition:color 1s;
+  color:rgba(255,255,255,0);
+}
+
+.menu:hover .menuItem  span {
+ color:rgba(255,255,255,1);
+}
+
+.menuItem {
+  position: relative;
+  padding: 20px;
+  transition:border .5s, background .2s;  
+}
+
+.menuItem:hover {
+  background: #34495e;
+  cursor: pointer;
+}
+
+.uno {
+  border-left:5px solid #16a085;
+}
+
+.uno:hover{
+  border-left:20px solid #16a085;
+}
+
+.dos {
+ border-left:5px solid #2980b9;
+}
+
+.dos:hover {
+ border-left:20px solid #2980b9;
+}
+
+.tres {
+  border-left:5px solid #8e44ad;
+}
+
+.tres:hover {
+  border-left:20px solid #8e44ad;
+}
+
+.cuatro {
+  border-left:5px solid #e67e22;
+}
+
+.cuatro:hover {
+  border-left:20px solid #e67e22;
+}
+
+.cinco {
+ border-left:5px solid #e74c3c;
+}
+
+.cinco:hover {
+ border-left:20px solid #e74c3c;
+}
+.six {
+ border-left:5px solid #16a085;
+}
+
+.six:hover {
+ border-left:20px solid #16a085;
+}
+.sept {
+ border-left:5px solid #2980b9;
+}
+
+.sept:hover {
+ border-left:20px solid #2980b9;
+}
+.huit {
+ border-left:5px solid #8e44ad;
+}
+
+.huit:hover {
+ border-left:20px solid #8e44ad;
+}
+
+
+/* Css relié au carousel */ 
+
+	  .paging {
+	  text-align: center;
+	  }
+	  .paging span {
+	  text-decoration: none;
+	  color: silver;
+	  cursor: pointer;
+	  }
+	  .paging span.active {
+	  font-size: 2em;
+	  color: black;
+	  }
+
+	  .paging2 span {
+	  font-size: 2em;
+	  
+	  
