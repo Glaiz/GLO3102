@@ -34,6 +34,12 @@
 	</head>
 
 <body>
+
+<h1 class="tablette"> Menu pour tablette</h1>
+
+<h1 class="mobile"> Menu pour mobile</h1>
+
+
 		<div id="top-menu" class="navbar-fixed-top">
 			<nav class="menu-principal">
 				<ul>
@@ -43,7 +49,7 @@
 					<li><a href="#" class="button">Offres</a></li>
 					<li><a href="#" class="button">Demandes</a></li>
 					<li><a href="#" class="button">Mes annonces</a></li>
-					<li><a href="#" class="button">Connexion</a></li>
+					<li><a href="inscription.html" class="button">Connexion</a></li>
 					<li><a href="#" class="button">Aide</a></li>
 				</ul>
 			</nav>
@@ -52,7 +58,7 @@
 		
 <div class="contenu">
 
-<div class="span2">
+<div class="span2 gauche">
 
  </nav>
 
@@ -73,11 +79,53 @@
 </div>
 
 
-<div class="span8">
+<div class="span8 centre">
 
+<!-- Caroussel magique -->
+ <br/>
+
+	<!-- gallery -->
+    <div id="myExample" style="width: 632px; height:500px;margin: auto; visibility: hidden /* trick to hide loading images before Theatre kicks in */;">
+
+      <a href="2.jpg" target="_blank">
+		<img src="images/2.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+      <a href="3.jpg" target="_blank">
+			<img src="images/3.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+      <a href="5.jpg" target="_blank">
+        <img src="images/5.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+      <a href="6.jpg" target="_blank">
+        <img src="images/6.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+      <a href="7.jpg" target="_blank">
+        <img src="images/7.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+      <a href="8.jpg" target="_blank">
+        <img src="images/8.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+      <a href="9.jpg" target="_blank">
+        <img src="images/9.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+      <a href="10.jpg" target="_blank">
+        <img src="images/10.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+    </div>
+
+	<!-- optional paging -->
+	<div class="paging"><span>{#}</span></div>
+
+	<!-- custom controls -->
+	<div class="controls">
+	  <span onclick="$('#myExample').theatre('prev');">Prev</span>
+	  <span onclick="$('#myExample').theatre('play');">Play</span>
+	  <span onclick="$('#myExample').theatre('stop');">Stop</span>
+	  <span onclick="$('#myExample').theatre('next');">Next</span>
+	</div>
 
  </div>
-<div class="span2">tydgdsfgsdgfdgf </div>
+<div class="span2 droite"></div>
 		
 
 </div> <!-- Fin du div section contenu -->

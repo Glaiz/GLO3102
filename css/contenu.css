@@ -1,3 +1,6 @@
+
+
+
 html,body{
 margin: 0;
 padding:0 ;
@@ -14,6 +17,18 @@ background-color:gray;
  * Menu principal
  */
  
+ .centre{
+ margin-top:50px;
+ text-align:center;
+ 
+ }
+  .gauche{
+ margin-top:50px;
+  }
+  
+ .droite{
+ margin-top:50px;
+  }
  #top-menu
  {
 	padding: 15px;
@@ -187,20 +202,110 @@ text-align:justify;
 
 /* Css relié au carousel */ 
 
-	  .paging {
-	  text-align: center;
-	  }
-	  .paging span {
-	  text-decoration: none;
-	  color: silver;
-	  cursor: pointer;
-	  }
-	  .paging span.active {
-	  font-size: 2em;
-	  color: black;
-	  }
+.paging {
 
-	  .paging2 span {
-	  font-size: 2em;
+text-align: center;
+}
+
+.paging span {
+text-decoration: none;
+color: silver;
+cursor: pointer;
+}
+
+.paging span.active {
+font-size: 2em;
+color: black;
+}
+
+.paging2 span {
+font-size: 2em;
+
+}
 	  
+	  
+	  
+	  
+	/* Css relié a la page inscription */   
+
+	
+	
+.facebook{
+width:100px;
+height:30px;
+
+}
+	  
+.twitter{
+width:100px;
+height:30px;
+
+}
+
+label{
+    display: block;
+    width: 150px;
+}
+
+/* Css relié au niveau responsive */   
+
+.tablette{
+display:none;
+}
+
+.mobile{
+display:none;
+}
+
+@media screen and (max-width: 1250px){
+.menu-principal{
+display: none;
+}
+
+
+}
+
+@media screen and (max-width: 500px){
+
+.contenu{
+display: none;
+}
+
+#top-menu{
+display: none;
+}
+
+.mobile{
+display:block;
+}
+
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px){
+
+.contenu{
+display: none;
+}
+
+#top-menu{
+display: none;
+}
+
+.mobile{
+display:none:
+}
+
+.tablette{
+display:block;
+}
+
+}
+
+
+
+
+
+}
+
+
 	  
